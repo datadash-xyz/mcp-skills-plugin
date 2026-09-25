@@ -1,0 +1,21 @@
+{
+  "name": "datadash",
+  "version": "0.1.0",
+  "description": "Polymarket analytics from Datadash: the Datadash MCP server plus skills for wallet and smart money analysis.",
+  "settings": [
+    {
+      "name": "Datadash API key",
+      "description": "API key sent to the Datadash MCP server as X-Api-Key.",
+      "envVar": "DATADASH_API_KEY",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "datadash": {
+      "httpUrl": "https://api.datadash.xyz/mcp",
+      "headers": {
+        "X-Api-Key": "${DATADASH_API_KEY}"
+      }
+    }
+  }
+}
