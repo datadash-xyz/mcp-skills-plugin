@@ -1,0 +1,36 @@
+{
+  "name": "datadash",
+  "version": "0.1.0",
+  "description": "Polymarket analytics from Datadash: the Datadash MCP server plus skills for wallet and smart money analysis.",
+  "author": {
+    "name": "Datadash",
+    "url": "https://datadash.xyz"
+  },
+  "homepage": "https://datadash.xyz",
+  "skills": "./skills/",
+  "mcpServers": {
+    "datadash": {
+      "type": "http",
+      "url": "https://api.datadash.xyz/mcp",
+      "env_http_headers": {
+        "X-Api-Key": "DATADASH_API_KEY"
+      }
+    }
+  },
+  "interface": {
+    "displayName": "Datadash",
+    "shortDescription": "Polymarket wallet and smart money analytics",
+    "longDescription": "Query Polymarket analytics tables, build and compare wallet cohorts, and see how smart money is positioned on an event or market, through the Datadash MCP server.",
+    "developerName": "Datadash",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://datadash.xyz",
+    "defaultPrompt": [
+      "How is smart money positioned on this event?",
+      "Show the biggest trades in this market"
+    ]
+  }
+}
