@@ -15,7 +15,7 @@ Every client needs a Datadash API key, which is sent to the Datadash MCP server
 
 ### Claude (web and desktop)
 
-1. In Claude's plugin settings, add the marketplace `datadash-xyz/mcp-skill-plugin`.
+1. In Claude's plugin settings, add the marketplace `datadash-xyz/mcp-skills-plugin`.
 2. Install **Datadash** from it.
 
 This installs the Datadash MCP server and both skills.
@@ -25,7 +25,7 @@ This installs the Datadash MCP server and both skills.
 From inside Claude Code:
 
 ```
-/plugin marketplace add datadash-xyz/mcp-skill-plugin
+/plugin marketplace add datadash-xyz/mcp-skills-plugin
 /plugin install datadash@datadash
 /reload-plugins
 ```
@@ -41,7 +41,7 @@ Enter your Datadash API key when prompted.
 
 2. Add the marketplace:
     ```bash
-    codex plugin marketplace add datadash-xyz/mcp-skill-plugin
+    codex plugin marketplace add datadash-xyz/mcp-skills-plugin
     ```
 
 3. Install the plugin from inside Codex:
@@ -54,7 +54,7 @@ Enter your Datadash API key when prompted.
 ### Gemini CLI
 
 ```bash
-gemini extensions install https://github.com/datadash-xyz/mcp-skill-plugin
+gemini extensions install https://github.com/datadash-xyz/mcp-skills-plugin
 ```
 
 Enter your Datadash API key when prompted (it is stored as `DATADASH_API_KEY`).
@@ -66,8 +66,8 @@ Enter your Datadash API key when prompted (it is stored as `DATADASH_API_KEY`).
 To work on the plugin from a local checkout in Claude Code:
 
 ```bash
-git clone https://github.com/datadash-xyz/mcp-skill-plugin
-claude --plugin-dir ./mcp-skill-plugin
+git clone https://github.com/datadash-xyz/mcp-skills-plugin
+claude --plugin-dir ./mcp-skills-plugin
 ```
 
 Then run `/mcp` from inside Claude Code and check that `plugin:datadash:datadash` is connected.
