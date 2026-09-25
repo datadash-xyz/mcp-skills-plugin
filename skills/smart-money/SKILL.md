@@ -96,8 +96,8 @@ insider trading.
 
 ## Showing wallets
 
-When your output is rendered as Markdown in a terminal (such as Claude Code, Codex CLI or Gemini CLI),
-show every wallet you mention as a Markdown link to its DataDash page:
+When your output is rendered as Markdown (Claude on the web and desktop, Claude Code, Codex CLI, Gemini
+CLI), show every wallet you mention as a Markdown link to its DataDash page:
 `[label](https://datadash.xyz/wallet/<address>)`, where `<address>` is the wallet's address (the user id)
 and the label is the user's display name if known, otherwise the shortened address. For example, the
 wallet `0x56687bf447db6ffa42ffe2204a05edaa20f55839` is shown as

@@ -4,7 +4,7 @@ Official Datadash plugin for AI coding tools. Turn your AI assistant into a Poly
 wallets, see how smart money is positioned on an event, find markets where smart money disagrees with the
 price, and build wallet cohorts, directly from your editor.
 
-Works with **Claude Code**, **Codex**, and **Gemini CLI**.
+Works with **Claude** (web and desktop), **Claude Code**, **Codex**, and **Gemini CLI**.
 
 ---
 
@@ -12,6 +12,13 @@ Works with **Claude Code**, **Codex**, and **Gemini CLI**.
 
 Every client needs a Datadash API key, which is sent to the Datadash MCP server
 (`https://api.datadash.xyz/mcp`) as the `X-Api-Key` header.
+
+### Claude (web and desktop)
+
+1. In Claude's plugin settings, add the marketplace `datadash-xyz/mcp-skill-plugin`.
+2. Install **Datadash** from it.
+
+This installs the Datadash MCP server and both skills.
 
 ### Claude Code
 
@@ -126,5 +133,5 @@ skills/
 
 ## Requirements
 
-- **MCP-compatible client**: Claude Code, Codex, or Gemini CLI
+- **MCP-compatible client**: Claude (web or desktop), Claude Code, Codex, or Gemini CLI
 - **Datadash account** with an API key ([datadash.xyz](https://datadash.xyz))
