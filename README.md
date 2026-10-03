@@ -20,7 +20,7 @@ Every client needs a Datadash API key, which is sent to the Datadash MCP server
 3. Install **Datadash** from it.
 4. Open the plugin's **Connectors** tab and connect Datadash.
 
-This installs the Datadash MCP server and both skills.
+This installs the Datadash MCP server and its skills.
 
 ### Claude Code
 
