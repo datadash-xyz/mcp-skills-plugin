@@ -15,22 +15,30 @@ Every client needs a Datadash API key, which is sent to the Datadash MCP server
 
 ### Claude (web and desktop)
 
-1. In Claude's plugin settings, add the marketplace `datadash-xyz/mcp-skills-plugin`.
-2. Install **Datadash** from it.
+1. Open **Customize**, then **Plugins**.
+2. Select **Add marketplace** and enter `datadash-xyz/mcp-skills-plugin`.
+3. Install **Datadash** from it.
+4. Open the plugin's **Connectors** tab and connect Datadash.
 
 This installs the Datadash MCP server and both skills.
 
 ### Claude Code
 
-From inside Claude Code:
+From inside Claude Code (v2.1.275 or later):
+
+```
+/plugin install datadash --marketplace datadash-xyz/mcp-skills-plugin
+```
+
+Confirm the marketplace, choose a scope, then enter your Datadash API key when prompted.
+
+On older versions, add the marketplace first:
 
 ```
 /plugin marketplace add datadash-xyz/mcp-skills-plugin
 /plugin install datadash@datadash
 /reload-plugins
 ```
-
-Enter your Datadash API key when prompted.
 
 ### Codex
 
